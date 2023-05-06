@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body id="body">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#body">Parser Visualizer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#types">Types of Parser</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#app">Try the App!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="masthead bg-success text-white text-center">
+      <div class="header_container" id="home">
+        <img src="assets/aggregate.png" alt="no preview" />
+        <h1>Parser Visualizer</h1>
+      </div>
+    </header>
+    <section class="about" id="about">
+      <div class="about_content">
+        <h1>What is Parsing?</h1>
+        <p>
+          Parsing is the process of converting formatted text into a data
+          structure. A data structure type can be any suitable representation of
+          the information engraved in the source text. Tree type is a common and
+          standard choice for XML parsing, HTML parsing, JSON parsing, and any
+          programming language parsing. The output tree is called Parse Tree or
+          Abstract Syntax Tree (AST). In HTML context, it is called Document
+          Object Model (DOM). A CSV file parsing can result in a List of List of
+          values or aList of Record objects. Graph Type is a choice for natural
+          language parsing. A piece of program that does parsing is called
+          Parser.
+        </p>
+        <br />
+        <p>
+          Within computational linguistics the term is used to refer to the
+          formal analysis by a computer of a sentence or other string of words
+          into its constituents, resulting in a parse tree showing their
+          syntactic relation to each other, which may also contain semantic and
+          other information (p-values).[citation needed] Some parsing algorithms
+          may generate a parse forest or list of parse trees for a syntactically
+          ambiguous input.[2] The term is also used in psycholinguistics when
+          describing language comprehension. In this context, parsing refers to
+          the way that human beings analyze a sentence or phrase (in spoken
+          language or text) "in terms of grammatical constituents, identifying
+          the parts of speech, syntactic relations, etc."[1] This term is
+          especially common when discussing which linguistic cues help speakers
+          interpret garden-path sentences. Within computer science, the term is
+          used in the analysis of computer languages, referring to the syntactic
+          analysis of the input code into its component parts in order to
+          facilitate the writing of compilers and interpreters. The term may
+          also be used to describe a split or separation.
+        </p>
+      </div>
+      <div class="about_image">
+        <img src="./assets/parsing.jpg" alt="no prev" />
+      </div>
+    </section>
+    <section class="types_of_parsers" id="types">
+      <h1 class="parser_header">Types of Parsers</h1>
+      <div class="lalr">
+        <div class="lalr_content">
+          <h1>LALR(1) Parser</h1>
+          <p>
+            In computer science, an LALR parser[a] or Look-Ahead LR parser is a
+            simplified version of a canonical LR parser, to parse a text
+            according to a set of production rules specified by a formal grammar
+            for a computer language. ("LR" means left-to-right, rightmost
+            derivation.) The LALR parser was invented by Frank DeRemer in his
+            1969 PhD dissertation, Practical Translators for LR(k) languages,[1]
+            in his treatment of the practical difficulties at that time of
+            implementing LR(1) parsers. He showed that the LALR parser has more
+            language recognition power than the LR(0) parser, while requiring
+            the same number of states as the LR(0) parser for a language that
+            can be recognized by both parsers. This makes the LALR parser a
+            memory-efficient alternative to the LR(1) parser for languages that
+            are LALR. It was also proven that there exist LR(1) languages that
+            are not LALR. Despite this weakness, the power of the LALR parser is
+            sufficient for many mainstream computer languages,[2] including
+            Java,[3] though the reference grammars for many languages fail to be
+            LALR due to being ambiguous.[2] The original dissertation gave no
+            algorithm for constructing such a parser given a formal grammar. The
+            first algorithms for LALR parser generation were published in
+            1973.[4] In 1982, DeRemer and Tom Pennello published an algorithm
+            that generated highly memory-efficient LALR parsers.[5] LALR parsers
+            can be automatically generated from a grammar by an LALR parser
+            generator such as Yacc or GNU Bison. The automatically generated
+            code may be augmented by hand-written code to augment the power of
+            the resulting parser.
+          </p>
+        </div>
+        <div class="lalr_image">
+            <img src="./assets/lalr1.jpg" alt="no prev">
+        </div>
+      </div>
+      <div class="slr">
+        <div class="slr_content">
+          <h1>SLR(1) Parser</h1>
+          <p>
+            In computer science, an LALR parser[a] or Look-Ahead LR parser is a
+            simplified version of a canonical LR parser, to parse a text
+            according to a set of production rules specified by a formal grammar
+            for a computer language. ("LR" means left-to-right, rightmost
+            derivation.) The LALR parser was invented by Frank DeRemer in his
+            1969 PhD dissertation, Practical Translators for LR(k) languages,[1]
+            in his treatment of the practical difficulties at that time of
+            implementing LR(1) parsers. He showed that the LALR parser has more
+            language recognition power than the LR(0) parser, while requiring
+            the same number of states as the LR(0) parser for a language that
+            can be recognized by both parsers. This makes the LALR parser a
+            memory-efficient alternative to the LR(1) parser for languages that
+            are LALR. It was also proven that there exist LR(1) languages that
+            are not LALR. Despite this weakness, the power of the LALR parser is
+            sufficient for many mainstream computer languages,[2] including
+            Java,[3] though the reference grammars for many languages fail to be
+            LALR due to being ambiguous.[2] The original dissertation gave no
+            algorithm for constructing such a parser given a formal grammar. The
+            first algorithms for LALR parser generation were published in
+            1973.[4] In 1982, DeRemer and Tom Pennello published an algorithm
+            that generated highly memory-efficient LALR parsers.[5] LALR parsers
+            can be automatically generated from a grammar by an LALR parser
+            generator such as Yacc or GNU Bison. The automatically generated
+            code may be augmented by hand-written code to augment the power of
+            the resulting parser.
+          </p>
+        </div>
+        <div class="slr_image">
+            <img src="./assets/slr.png" alt="no prev">
+        </div>
+      </div>
+    </section>
+    <section class="try_the_app" id="app">
+        <h1>Try The Visualizer!</h1>
+        <div class="visual_routes">
+            <a href="./lalr1.html" target="_blank"><button class="lalr_btn"><img src="./assets/compiler.png"/>Try LALR(1)!</button></a>
+            <a href="./slr.html" target="_blank"><button class="slr_btn"><img src="./assets/website.png"/>Try SLR(1)!</button></a>
+        </div>
+    </section>
+    <section class="team_members">
+        <h1>Team Members</h1>
+        <div class="team_member_tiles">
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/boy.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Swarga Raj Dutta</b></h5>
+                  <p class="card-text">I worked mainly on building the LALR(1) Parser!</p>
+                  <a href="https://github.com/Swarga-codes" class="btn btn-dark" target="_blank"><b>Check My Github</b></a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/girl.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Ritika Saxena</b></h5>
+                  <p class="card-text">I worked mainly on building the SLR(1) Parser!</p>
+                  <a href="https://github.com/Ritika091" class="btn btn-dark" target="_blank"><b>Check My Github</b></a>
+                </div>
+              </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>©Made with ❤️ by Swarga Raj Dutta & Ritika Saxena</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+.header_container{
+    padding: 5rem 0rem;
+}
+.header_container h1{
+    margin-top: 2rem;
+    font-size: 48px;
+}
+.about,.lalr,.slr{
+    padding: 5rem 1rem;
+    display: flex;
+    width: 100%;
+}
+.about_content,.lalr_content,.slr_content{
+   width: 60%;
+}
+
+.about p{
+    padding-right: 2rem;
+}
+.about_image img,.lalr_image img,.slr_image img{
+    width: 36rem;
+    height: 29rem;
+}
+.types_of_parsers{
+    padding: 5rem 1rem;
+    
+}
+.types_of_parsers .parser_header{
+    text-align: center;
+}
+.lalr{
+    padding: 2rem 0;
+}
+.try_the_app{
+    text-align: center;
+}
+.visual_routes{
+    padding: 10rem 10rem;
+}
+.lalr_btn,.slr_btn{
+    background-color: #fff;
+    padding: 1rem 1rem;
+   border:2px solid black;
+   border-radius: 16px;
+   margin: 0 2rem;
+}
+.lalr_btn img,.slr_btn img{
+    width: 6rem;
+    padding: 0 1rem;
+}
+
+
+.slr_btn img{
+    background-color: white;
+}
+.team_members{
+    justify-content: center;
+    padding: 5rem 1rem;
+    width: 100%;
+}
+.team_members h1{
+    text-align: center;
+}
+.team_member_tiles{
+    display: flex;
+    padding: 5rem 1rem;
+    justify-content: center;
+}
+.team_member_tiles .card{
+    margin: 0 3rem;
+}
+.footer{
+   background-color: #000;
+}
+.footer p{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 1rem 1rem;
+}
